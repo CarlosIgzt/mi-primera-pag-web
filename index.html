@@ -4,7 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tu Marca Personal</title>
+    <title>Tu Portafolio</title>
+    <style>
+              /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffba08;
+            color: #370617;
+        }
+
+        /* Estilos del encabezado y navegación */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        /* Estilos de las secciones */
+        section {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Estilos del portafolio */
+        .proyecto {
+            margin-bottom: 2rem;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            background-color: #f48c06;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .proyecto img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Estilos de la experiencia */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            border-left: 2px solid #ff6600;
+            padding-left: 1rem;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -19,23 +106,43 @@
     </header>
 
     <section id="inicio">
-        <h1>Bienvenido a mi Página de Marca Personal</h1>
-        <p>¡Hola! Soy [Tu Nombre], [Breve descripción sobre ti y tus habilidades]</p>
+        <h1>Bienvenido a mi Portafolio Personal</h1>
+        <p>Explora mi trabajo y proyectos.</p>
     </section>
 
     <section id="sobre-mi">
         <h2>Sobre Mí</h2>
-        <p>[Información más detallada sobre ti, tu experiencia y tus valores]</p>
+        <p>Soy [Tu Nombre], un apasionado [tu profesión o área de enfoque] con experiencia en [breve resumen de tu experiencia].</p>
     </section>
 
     <section id="portafolio">
         <h2>Portafolio</h2>
         <div class="proyecto">
-            <img src="proyecto1.jpg" alt="Proyecto 1">
+            <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Imagen de cabecera">
             <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto y tu papel en él.</p>
+            <p>Descripción del proyecto y tu rol en él.</p>
         </div>
-        <!-- Repite esta estructura para más proyectos -->
+        
+        <div class="proyecto">
+            <img src="proyecto2.jpg" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto y tu rol en él.</p>
+        </div>
+        
+        <!-- Agrega más proyectos aquí -->
+
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>
+                <h3>[Título del trabajo]</h3>
+                <p>[Nombre de la empresa] - [Fechas]</p>
+                <p>Descripción de tus responsabilidades y logros.</p>
+            </li>
+            <!-- Agrega más trabajos si es necesario -->
+        </ul>
     </section>
 
     <section id="contacto">
@@ -53,3 +160,4 @@
     </footer>
 </body>
 </html>
+
